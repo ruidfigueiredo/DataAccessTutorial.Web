@@ -1,3 +1,5 @@
+@addTagHelper "*, Microsoft.AspNetCore.Mvc.TagHelpers"
+@model IEnumerable<DataAccessTutorial.Web.Models.Product>
 <!doctype html>
 <html lang="">
   <head>
@@ -6,8 +8,48 @@
       <meta name="description" content="" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <!-- Place favicon.ico in the root directory -->
+      <style>          
+          table {
+              margin-left: 10px;
+          }
+          table, th{
+              border-bottom: 1px solid black;
+          }
+        
+          td {
+              padding: 5px;
+          }
+      </style>
   </head>
   <body>
-      <h1>Data Access tutorial in Linux</h1>
+      <h1>Data Access tutorial in Linux</h1>      
+      <table>
+          <thead>
+              <tr>
+                  <th>Id</th>
+                  <th>Name</th>
+                  <th>Price</th>
+                  <th></th>
+                  <th></th>
+              </tr>
+          </thead>
+          <tbody>
+              @foreach (var product in Model)
+              {
+                <tr>
+                    <td>@product.Id</td>
+                    <td>@product.Name</td>
+                    <td>@product.Price</td>
+                    <td><a asp-action="Update" asp-route-id="@product.Id">Modify</a></td>
+                    <td><form asp-action="Delete" method="post" asp-route-id="@product.Id"><input type="submit" value="Delete"/></form></td>
+                </tr>
+              }
+              <tr>
+                  <td colspan="5">
+                      <a asp-action="Create">Add</a>
+                  </td>
+              </tr>
+          </tbody>
+      </table>                  
   </body>
 </html>
