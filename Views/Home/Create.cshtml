@@ -1,0 +1,21 @@
+@addTagHelper "*, Microsoft.AspNetCore.Mvc.TagHelpers"
+@model DataAccessTutorial.Web.Models.Product
+<!doctype html>
+<html lang="">
+  <head>
+      <meta charset="utf-8" />
+      <title></title>
+      <meta name="description" content="" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body>
+      <form method="POST">
+          <label asp-for="@Model.Name"></label>
+          <input asp-for="@Model.Name"/>
+          <label asp-for="@Model.Price"></label>
+          <input asp-for="@Model.Price"/>
+          <input type="submit"/>
+      </form>
+      <div asp-validation-summary="All"></div>
+  </body>
+</html>
