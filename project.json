@@ -13,7 +13,9 @@
     "Microsoft.Extensions.Configuration.Json": "1.0.0",
     "Microsoft.Extensions.Configuration.CommandLine": "1.0.0",
     "Microsoft.AspNetCore.Mvc": "1.0.1",
-    "Microsoft.EntityFrameworkCore": "1.0.1"
+    "Microsoft.EntityFrameworkCore": "1.0.1",
+    "MySql.Data.Core": "7.0.4-ir-191",
+    "MySql.Data.EntityFrameworkCore": "7.0.4-ir-191"
   },
 
   "tools": {
