@@ -16,4 +16,4 @@ There are three branches
  - Postgres
    - PostgreSQL with migrations
 
-Read the tutorial here: [http://www.blinkingcaret.com/2016/11/02/cross-platform-database-walk-through-using-asp-net-mvc-and-entity-framework-core/](http://www.blinkingcaret.com/2016/11/02/cross-platform-database-walk-through-using-asp-net-mvc-and-entity-framework-core/) 
+Read the tutorial here: [http://www.blinkingcaret.com/2016/11/01/cross-platform-database-walk-through-using-asp-net-mvc-and-entity-framework-core/](http://www.blinkingcaret.com/2016/11/01/cross-platform-database-walk-through-using-asp-net-mvc-and-entity-framework-core/) 
