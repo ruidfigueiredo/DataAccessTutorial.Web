@@ -9,7 +9,7 @@ The master branch uses SQLite without migrations. It will generate the database 
 
 There are three branches
 
- - SqLite
+ - Sqlite
    - SQLite using migrations
  - Mysql 
    - MySQL without migrations (run with enviroment set to Development to generate have the database be generated automatically)
